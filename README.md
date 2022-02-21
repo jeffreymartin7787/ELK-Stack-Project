@@ -1,47 +1,96 @@
-# ELK-Stack-Project
-# Editing this README
+## Automated ELK Stack Deployment
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!).  Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+The files in this repository were used to configure the network depicted below.
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+![TODO: Update the path with the name of your diagram](Images/diagram_filename.png)
 
-## Name
-Elk-Stack Project
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+  - _TODO: Enter the playbook file._
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+This document contains the following details:
+- Description of the Topologu
+- Access Policies
+- ELK Configuration
+  - Beats in Use
+  - Machines Being Monitored
+- How to Use the Ansible Build
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+### Description of the Topology
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+- _TODO: What does Filebeat watch for?_
+- _TODO: What does Metricbeat record?_
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+The configuration details of each machine may be found below.
+_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+| Name     | Function | IP Address | Operating System |
+|----------|----------|------------|------------------|
+| Jump Box | Gateway  | 10.0.0.1   | Linux            |
+| TODO     |          |            |                  |
+| TODO     |          |            |                  |
+| TODO     |          |            |                  |
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+### Access Policies
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+The machines on the internal network are not exposed to the public Internet. 
 
-## License
-For open source projects, say how it is licensed.
+Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- _TODO: Add whitelisted IP addresses_
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+Machines within the network can only be accessed by _____.
+- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+
+A summary of the access policies in place can be found in the table below.
+
+| Name     | Publicly Accessible | Allowed IP Addresses |
+|----------|---------------------|----------------------|
+| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
+|          |                     |                      |
+|          |                     |                      |
+
+### Elk Configuration
+
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
+- _TODO: What is the main advantage of automating configuration with Ansible?_
+
+The playbook implements the following tasks:
+- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+- ...
+- ...
+
+The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
+
+![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+
+### Target Machines & Beats
+This ELK server is configured to monitor the following machines:
+- _TODO: List the IP addresses of the machines you are monitoring_
+
+We have installed the following Beats on these machines:
+- _TODO: Specify which Beats you successfully installed_
+
+These Beats allow us to collect the following information from each machine:
+- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+
+### Using the Playbook
+In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+SSH into the control node and follow the steps below:
+- Copy the _____ file to _____.
+- Update the _____ file to include...
+- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+
+_TODO: Answer the following questions to fill in the blanks:_
+- _Which file is the playbook? Where do you copy it?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which URL do you navigate to in order to check that the ELK server is running?
+
+_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._

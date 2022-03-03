@@ -7,7 +7,7 @@ Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-https://github.com/WBonill/-WB-UCLA-Cyber-Project1/blob/main/ansible/Images/ELK_Diagram.png
+https://github.com/jeffreymartin7787/ELK-Stack-Project/blob/main/diagrams/Elk%20Machine.png
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the YAML file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -38,11 +38,14 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
     TODO: What does Metricbeat record? Metricbeat records metrics from on going services on the server
 
 The configuration details of each machine may be found below. Note: Use the Markdown Table Generator to add/remove values from the table.
+<create table>
 NAME 	Function 	IP Address 	Operating System
 Job-Provisioiner 	Gateway 	10.1.0.4 	Linux
 Web-1 	Webserver 	10.1.0.5 	Linux
 Web-2 	Webserver 	10.1.0.6 	Linux
 Elk.Machine 	Webserver 	10.2.04 	Linux
+<end table>
+
 Access Policies
 
 The machines on the internal network are not exposed to the public Internet.

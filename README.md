@@ -42,12 +42,12 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The configuration details of each machine may be found below. Note: Use the Markdown Table Generator to add/remove values from the table.
 <create table>
-NAME 	Function 	IP Address 	Operating System
-Job-Provisioiner 	Gateway 	10.1.0.4 	Linux
+NAME--- 	Function--- 	IP Address--- 	Operating System
+Job-Provisioiner--- 	Gateway 	10.1.0.4 	Linux
 Web-1 	Webserver 	10.1.0.5 	Linux
 Web-2 	Webserver 	10.1.0.6 	Linux
-Elk.Machine 	Webserver 	10.2.04 	Linux
-<end table>
+Elk.Machine 	Monitoring 	10.2.04 	Linux
+
 
 Access Policies
 
